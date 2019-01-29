@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="all.min.css">
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<script src="game.js"></script>
+</head>
+<style>
+
+	.main{
+		width: 625px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.main div{
+		min-width: 100px;
+		justify-content: right;
+	}
+
+
+</style>
+<body >
+
+
+<section class="parent">
+	<div class="main1"><div id="divStart"><button id="btnstart" onclick="resetTi()">Start</button></div></div>
+	<div class="main1">
+		<div class="timer">
+			<div>Timer  </div> <div>&nbsp;&nbsp;&gt;&gt;</div>
+			<div class="Min">Min :</div>  &nbsp;&nbsp;
+			<div id="MinEmp">0</div>&nbsp;&nbsp;
+			<div class="Sec">Sec : </div>&nbsp;&nbsp;
+			<div id="SecEmp">0</div>
+			<button class="btnTimer" onclick="stopTi()">Stop</button>
+			<!--<button class="btnTimer" onclick="resetTi()">Reset</button>-->
+		</div>
+	</div>
+<div class="main">
+	<div class="father archive" flagclick="0" state="0" father-name="archive" id="11" onclick="rotateOnClick(this);">
+		<div class="front"></div>
+		<div class="back archive1"><i class="fas fa-archive fa-4x"></i></div>
+	</div>
+	<div class="father book" flagclick="0" state="0" father-name="book" id="0" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back book1"><i class="far fa-address-book fa-4x"></i></div>
+
+	</div>
+
+	<div class="father book" flagclick="0" state="0" father-name="book" id="1" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back book1"><i class="far fa-address-book fa-4x"></i></div>
+	</div>
+
+
+	<div class="father accessible" flagclick="0" state="0" father-name="accessible" id="3" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back accessible1"><i class="fab fa-accessible-icon fa-4x" ></i></div>
+	</div>
+
+
+	<div class="father apple" flagclick="0" state="0" father-name="apple" id="4" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back apple1"><i class="fab fa-apple fa-4x"></i></div>
+	</div>
+	<div class="father android" flagclick="0" state="0" father-name="android"  id="8" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back android1"><i class="fab fa-android fa-4x"></i></div>
+	</div>
+
+	<div class="father freshener" flagclick="0" state="0" father-name="freshener" id="6" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back freshener1"><i class="fas fa-air-freshener fa-4x"></i></div>
+	</div>
+
+	<div class="father freshener" flagclick="0" state="0" father-name="freshener" id="7" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back freshener1"><i class="fas fa-air-freshener fa-4x"></i></div>
+	</div>
+	<div class="father android" flagclick="0" state="0" father-name="android" id="9" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back android1"><i class="fab fa-android fa-4x"></i></div>
+	</div>
+	<div class="father apple" flagclick="0" state="0" father-name="apple" id="5" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back apple1"><i class="fab fa-apple fa-4x"></i></div>
+	</div>
+	<div class="father archive" flagclick="0" state="0" father-name="archive" id="10" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back archive1"><i class="fas fa-archive fa-4x"></i></div>
+	</div>
+	<div class="father arrows" flagclick="0" state="0" father-name="arrows" id="14" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back arrows1"><i class="fas fa-arrows-alt fa-4x"></i></div>
+	</div>
+	<div class="father asterisk" flagclick="0" state="0" father-name="asterisk" id="12" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back asterisk1"><i class="fas fa-asterisk fa-4x"></i></div>
+	</div>
+	<div class="father arrows" flagclick="0" state="0" father-name="arrows" id="13" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back arrows1"><i class="fas fa-arrows-alt fa-4x"></i></div>
+	</div>
+	<div class="father accessible" flagclick="0" state="0" father-name="accessible" id="2" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back accessible1"><i class="fab fa-accessible-icon fa-4x" ></i></div>
+	</div>
+
+	<div class="father asterisk" flagclick="0" state="0" father-name="asterisk" id="15" onclick="rotateOnClick(this);">
+		<div class="front"> </div>
+		<div class="back asterisk1"><i class="fas fa-asterisk fa-4x"></i></div>
+	</div>
+</div>
+</section>
+<script src="game.js"></script>
+</body>
+</html>

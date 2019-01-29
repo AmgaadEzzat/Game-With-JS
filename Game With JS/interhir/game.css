@@ -1,0 +1,131 @@
+*{
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+body{
+
+position: relative;
+	top: 0px;
+	perspective: 1000px;
+	text-align: center;
+}
+#divStart{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999999;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: cornflowerblue;
+
+}
+.parent{
+	position: relative;
+	left: 25%;
+	width: 650px;
+	height: 670px;
+	padding:40px 0px 40px 0px;
+	background-color: DarkOrchid;
+	border-radius: 10px;
+}
+.father{
+
+	z-index: 55;
+	position: relative;
+		width: 140px;
+		height: 140px;
+		margin: 3px 3px;
+		transition: all .5s ease-in-out;
+		transform-style: preserve-3d;
+}
+.main{
+	width: 600px;
+	
+	margin-left: 22px
+}
+.main div{
+	display: inline-block;
+}
+.father > div {
+		position: absolute;
+	z-index: 30;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		color: #fff;
+}
+.front{
+	z-index:2;
+    background-color:Chartreuse;
+   backface-visibility: hidden;
+
+}
+.back{
+	z-index:1;
+    background-color:Maroon;
+    transform: rotateY(180deg);
+     backface-visibility: hidden;
+	padding-top: 40px;
+}
+
+.timer{
+	width:90%;
+	min-height: 30px;
+	float:left;
+	/*background-color: blue;*/
+	margin-left: 30px
+}
+.timer div{
+	float: left;
+	color:Gold;
+	font-weight: bold
+}
+.Min{
+
+	width:100px
+}
+
+.Sec{
+
+	width:100px
+}
+
+.btnTimer{
+	font-size:15px;
+	width:75px;
+	height:35px;
+	border-radius: 3px;
+	margin-left: 8px;
+	color:Blue;
+	background-color: Gold
+}
+
+#divStart{
+	position: fixed;
+	top: 0px;
+	left: 325px;
+	z-index: 999999;
+	display: block;
+	width: 50%;
+	height: 100%;
+	background-color: cornflowerblue;
+	opacity: .3;
+	border-radius: 10px;
+	
+}
+
+#btnstart{
+	
+		font-family: Tahoma;
+		font-size: 42px;
+		margin: 50px;
+		padding: 50px;
+		border-radius: 10px;
+		/*opacity: 1;*/
+		color: white;
+		background-color: black;
+	}
